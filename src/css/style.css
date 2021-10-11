@@ -10,6 +10,7 @@
     --text-main: #1B1642;
     --text-color: #363636;
     --bg-main:  #E6F8F9;
+    --member-color: #27918ac7; 
 }
 
 *{
@@ -36,20 +37,23 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 70px;
+    min-height: 75px;
 }
 
 
-/************** 
- Logo - Em Breve LOGO.PNG 
-*! .brand h3 {
-*! font-size: 1.3;} 
-*!.brand span{
-*!color: var(--main-color);
-*!display: inline-block;
-*!margin-right: .5rem;}
+/**************/
 
-*********************/
+.brand h3 {
+    font-size: 2.1rem;
+} 
+.brand span{
+    color: var(--main-color);
+    display: inline-block;
+    margin-right: .5rem;
+    
+}
+
+
 
 
 header ul{
@@ -85,6 +89,8 @@ header  li  a{
     font-weight: 500;
 }
 
+
+
 /*** Organizando BTN ***/
 
 .btn {
@@ -92,7 +98,7 @@ header  li  a{
     border-radius: 5px;
 }
 
-.btn-outline-text{
+.btn-outline-text {
     /* ?  Borda no BTN topo ***/
     border: 1px solid var(--text-main);
 }
@@ -217,41 +223,7 @@ img{
 }
 
 /**? ############################################*/
-/**: Definindo membros por ID **/
-
-
-.team-grid div#member-1 {
-    background-image: url(/src/img/avatar/1.jpeg);
-}
-
-.team-grid div#member-2 {
-    background-image: url(/src/img/avatar/2.jpeg);
-}
-
-.team-grid div#member-3 {
-    background-image: url(/src/img/avatar/3.jpeg);
-}
-
-.team-grid div#member-4 {
-    background-image: url(/src/img/avatar/4.jpeg);
-}
-
-.team-grid div#member-5 {
-    background-image: url(/src/img/avatar/5.jpeg);
-}
-
-.team-grid div#member-6 {
-    background-image: url(/src/img/avatar/10.jpg);
-}
-
-.team-grid div#member-7 {
-    background-image: url(/src/img/avatar/7.jpeg);
-}
-
-.team-grid div#member-8 {
-    background-image: url(/src/img/avatar/8.jpg);
-}
-
+/**: Definindo membros por ID *
 /**? ############################################*/
 
 .team-member {
@@ -279,4 +251,12 @@ img{
     color: var(--text-main);
 }
 
+.team-member h4{
+    color: var(--member-color);
+    font-weight: 500;
+}
+
+.team-member h4:hover{
+    color : var(--main-color)
+}
 
