@@ -41,10 +41,11 @@ header .container{
 }
 
 
-/**************/
+/***** ICON *********/
 
 .brand h3 {
     font-size: 2.1rem;
+    color: var(--text-main);
 } 
 .brand span{
     color: var(--main-color);
@@ -52,9 +53,6 @@ header .container{
     margin-right: .5rem;
     
 }
-
-
-
 
 header ul{
     display: flex;
@@ -110,6 +108,7 @@ header  li  a{
 
 
 /** Hero == Icon principal **/
+
 .wrapper{
     width: 85%;
     margin: auto;
@@ -147,7 +146,7 @@ section{
 .hero-text p{
     padding-right: 10rem;
     margin-bottom: 2.5rem;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
     
 }
 
@@ -178,7 +177,7 @@ img{
 .about-text p{
     padding-right: 10rem;
     margin-bottom: 2.5rem;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
     
 }
 
@@ -231,7 +230,7 @@ img{
    
 }
 
-.team-member .img-member{
+.team-member .img-member, .testimonial-by .img-member {
     /*? class="img-member */
 
     height: 155px;
@@ -258,5 +257,71 @@ img{
 
 .team-member h4:hover{
     color : var(--main-color)
+
 }
 
+
+
+/***** Seção depoimento ***/
+
+.testimonial {
+    background: var(--text-main);
+
+}
+.testimonial .wrapper{
+    padding: 4rem 0rem;
+
+}
+
+/*? depoimento + membro(img) **/
+
+.testimonial-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.testimonial .story{
+    width: 70%;
+    margin: auto;
+
+}
+
+.testimonial h3{
+    font-size: 2em;
+    color: #fff;
+    line-height: 3rem;
+    font-weight: 500;
+   
+}
+
+.testimonial-by {
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.testimonial-by h3{
+    font-size: 1.5rem;
+}
+
+.testimonial-by .img-member{
+    margin: 0;
+    margin-right: 1.5rem;
+    width: 100px;
+    height: 100px; 
+}
+
+.testimonial-by .description h3{
+    color: var(--main-color);
+    margin-bottom: 0rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.testimonial-by .description h4{
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
