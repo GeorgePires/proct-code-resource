@@ -107,6 +107,8 @@ header  li  a{
 }
 
 
+
+
 /** Hero == Icon principal **/
 
 .wrapper{
@@ -195,23 +197,23 @@ img{
 /** Seção Team/Membros **/
 /* ? Textos centralizado */
 
-.text-center{
+.text-center {
     text-align: center;
 }
-.team-text{
+.team-text, .partner-text {
     margin-bottom:  2rem;
 }
 
-.team-text h1{
+.team-text h1, .partner-text h1, .support-text h1{
     font-size: 4rem;
     color: var(--text-main);
 }
 
-.team-text p{
+.team-text p, .partner-text p{
     margin-top: 1rem;
 }
 
-.team-grid{
+.team-grid {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -324,4 +326,97 @@ img{
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+
+/**? Seção "Parceiros" */
+
+.partner .wrapper{
+    padding: 5rem 0rem;
+}
+
+.partner-grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3rem 1rem;
+    padding: 0rem 4rem;                                     
+}
+
+
+.partner-grid img {
+    width: 85%;
+    height: auto;
+}
+
+/*** Suporte ***/
+
+.support {
+    padding: 0rem 0rem 3rem 0rem;
+}
+
+.support .wrapper {
+    /*! suporte **/
+
+    padding: 7rem 0rem;
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+.support-controls{
+    margin: 4rem 0rem 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.support-controls{
+    display: inline-block;
+}
+
+.support-controls a:first-child{
+    margin-right: 2rem;
+}
+
+.support-controls .btn{
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+}
+
+
+
+/**? Btn suporte ***/
+
+.btn-main-blue{
+    background: var(--text-main);
+    color: #fff;
+}
+
+.btn-white{
+    background: #fff;
+    color: var(--text-main);
+}
+
+
+/**? INFO RODAPE ***/
+
+footer{
+    background: var(--text-main);
+}
+
+footer .container{
+    padding: 4rem 0rem;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0rem 2rem;
+}
+
+.footer-brand h3{
+    color: var(--main-color);
+    font-size: 1.5rem;
+
+
 }
